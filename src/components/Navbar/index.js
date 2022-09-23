@@ -40,7 +40,7 @@ const Navbar = ({ toggle }) => {
         <Nav scrollNav={scrollNav}>
           <NavbarContainer>
             <NavLogo onClick={toggleHome} to='/'>
-              dolla
+              Crypto Dome
             </NavLogo>
             <MobileIcon onClick={toggle}>
               <FaBars />

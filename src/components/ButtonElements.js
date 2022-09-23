@@ -7,7 +7,7 @@ export const Button = styled(Link)`
   font-weight: 500;
   color: #fff;
   cursor: pointer;
-  margin: 20px;
+  margin-top: 20px;
   height: 55px;
   text-align:center;
   border: none;

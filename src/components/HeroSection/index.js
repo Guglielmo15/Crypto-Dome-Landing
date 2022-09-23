@@ -25,7 +25,7 @@ function HeroSection() {
         <VideoBg playsInline autoPlay loop muted src={Video} type='video/mp4' />
       </HeroBg>
       <HeroContent>
-        <HeroH1>Crypto Dome Hub</HeroH1>
+        <HeroH1>Crypto Dome</HeroH1>
         <HeroP>
         The all-in-one solution for your everyday crypto experience.
         </HeroP>

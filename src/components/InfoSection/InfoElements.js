@@ -54,7 +54,9 @@ export const TextWrapper = styled.div`
 `;
 
 export const TopLine = styled.div`
-  color: #01bf71;
+  background: -webkit-linear-gradient(#F5CB60, #E53A06);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: 16px;
   line-height: 16px;
   font-weight: 700;

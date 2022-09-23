@@ -3,10 +3,10 @@ export const homeObjOne = {
   lightBg: false,
   lightText: true,
   lightTextDesc: true,
-  topLine: 'Premium Community',
+  topLine: 'A valuable community',
   headline: 'Crypto Dome is here to ease your experience',
   description:
-    'Get access to our exclusive hub for FREE where you can find different tabs such as a market cap, news, airdrops and more...',
+    'Get access to our unique Hub for FREE where you can find different units such as a market watcher, crypto news, airdrops and more...',
   buttonLabel: 'Explore the Hub',
   imgStart: false,
   img: require('../../images/1.png'),
