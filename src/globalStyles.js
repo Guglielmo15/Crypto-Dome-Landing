@@ -29,7 +29,7 @@ export const MainHeading = styled.h1`
 `;
 
 export const Heading = styled.h2`
-	font-size: clamp(1.3rem, 13vw, 3.1rem);
+	font-size: clamp(1.3rem, 13vw, 2.5rem);
 	margin: ${({ margin }) => (margin ? margin : '')};
 	margin-bottom: ${({ mb }) => (mb ? mb : '')};
 	margin-top: ${({ mt }) => (mt ? mt : '')};
@@ -64,6 +64,7 @@ export const Section = styled.section`
 	max-height: ${({ maxHeight }) => (maxHeight ? maxHeight : 'auto')};
 	min-height: ${({ minHeight }) => (minHeight ? minHeight : 'auto')};
 	width: 1200px !important;
+	margin-bottom: 90px;
 	@media screen and (max-width: 768px) {
 		padding: ${({ smPadding }) => (smPadding ? smPadding : '70px 0')};
 		margin: auto;

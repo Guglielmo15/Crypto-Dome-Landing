@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaArrowCircleLeft, FaArrowCircleRight } from 'react-icons/fa';
+import { FaLessThan, FaGreaterThan } from 'react-icons/fa';
 import { IconContext } from 'react-icons';
 import { data, sliderSettings } from '../../Data/CarouselData';
 import { Row, Heading, Section, TextWrapper } from '../../globalStyles';
@@ -25,9 +25,9 @@ const CarouselInit = () => {
 					Find more about us
 				</Heading>
 				<ButtonContainer>
-					<IconContext.Provider value={{ size: '3rem', color: '#1d609c' }}>
-						<FaArrowCircleLeft onClick={sliderRef?.slickPrev} />
-						<FaArrowCircleRight onClick={sliderRef?.slickNext} />
+					<IconContext.Provider value={{ size: '1.5rem', color: '#000' }}>
+						<FaLessThan onClick={sliderRef?.slickPrev} />
+						<FaGreaterThan onClick={sliderRef?.slickNext} />
 					</IconContext.Provider>
 				</ButtonContainer>
 			</Row>

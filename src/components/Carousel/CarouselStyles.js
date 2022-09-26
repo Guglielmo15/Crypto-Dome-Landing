@@ -8,7 +8,6 @@ export const CarouselContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #010606;
 
   @media screen and (max-width: 768px) {
     height: 1100px;
@@ -36,6 +35,7 @@ export const ImageWrapper = styled.div`
 	border-radius: 10px;
 	outline: none;
 	height: 430px;
+	box-shadow: 6px 6px 6px #00000040;
 	@media screen and (min-width: 440px) {
 		border: 1px solid #bebebe;
 	}
@@ -74,7 +74,6 @@ export const ReviewSlider = styled(Slider)`
 `;
 
 export const CardButton = styled.div`
-	background-color: #F5F5F5;
 	font-size: 1.7rem;
 	padding: 5px 10px;
 	color: #fff;
