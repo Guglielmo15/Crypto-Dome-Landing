@@ -13,6 +13,7 @@ import {
   NavBtnLink,
   CloudCircle
 } from '../Navbar/NavbarElements';
+import { FaCrown } from 'react-icons/fa';
 
 const Sidebar = ({ isOpen, toggle }) => {
   return (
@@ -55,23 +56,12 @@ const Sidebar = ({ isOpen, toggle }) => {
           >
             Services
           </SidebarLink>
-          {/* <SidebarLink
-            to='signup'
-            onClick={toggle}
-            smooth={true}
-            duration={500}
-            spy={true}
-            exact='true'
-            offset={-80}
-          >
-            Sign Up
-          </SidebarLink> */}
         </SidebarMenu>
-        <NavBtnLink to='/signin'><span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              Hub <CloudCircle />
+        <NavBtnLink to="/#">
+          Hub <CloudCircle />
+        </NavBtnLink>
+        <NavBtnLink to="/#">
+          Premium <FaCrown />
         </NavBtnLink>
       </SidebarWrapper>
     </SidebarContainer>

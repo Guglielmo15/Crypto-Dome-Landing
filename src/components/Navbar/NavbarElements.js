@@ -96,135 +96,38 @@ export const NavLinks = styled(LinkS)`
 `;
 
 export const NavBtnLink = styled(LinkR)`
-  background: linear-gradient(-30deg, #0b3d3d 50%, #082b2b 50%);
+  margin: 10px;
   padding: 10px 20px;
-  margin: 12px;
-  display: inline-block;
-  -webkit-transform: translate(0%, 0%);
-          transform: translate(0%, 0%);
-  overflow: hidden;
-  color: #d4f7f7;
-  font-size: 20px;
-  letter-spacing: 2.5px;
   text-align: center;
   text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  border: 0px;
+  font-weight: 700;
+  box-shadow: 0px 0px 14px -7px #f09819;
+  background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
   text-decoration: none;
-  -webkit-box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
 
-  @media screen and (max-width: 768px) {
-    padding: 20px 40px;
-    position: relative;
-    margin-left: 30%;
+  @media screen and (max-width: 768px) { 
+    margin: 10px 80px;
   }
 
-  ::before {
-    content: '';
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    background-color: #85adad;
-    opacity: 0;
-    -webkit-transition: .2s opacity ease-in-out;
-    transition: .2s opacity ease-in-out;
+  :hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
   }
 
-  :hover::before {
-    opacity: 0.2;
-  }
-
-  span {
-    position: absolute;
-  }
-
-  span:nth-child(1) {
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 2px;
-    background: -webkit-gradient(linear, right top, left top, from(rgba(8, 43, 43, 0)), to(#26d9d9));
-    background: linear-gradient(to left, rgba(8, 43, 43, 0), #26d9d9);
-    -webkit-animation: 2s animateTop linear infinite;
-            animation: 2s animateTop linear infinite;
-  }
-
-  @keyframes animateTop {
-    0% {
-      -webkit-transform: translateX(100%);
-              transform: translateX(100%);
-    }
-    100% {
-      -webkit-transform: translateX(-100%);
-              transform: translateX(-100%);
-    }
-  }
-
-  span:nth-child(2) {
-    top: 0px;
-    right: 0px;
-    height: 100%;
-    width: 2px;
-    background: -webkit-gradient(linear, left bottom, left top, from(rgba(8, 43, 43, 0)), to(#26d9d9));
-    background: linear-gradient(to top, rgba(8, 43, 43, 0), #26d9d9);
-    -webkit-animation: 2s animateRight linear -1s infinite;
-            animation: 2s animateRight linear -1s infinite;
-  }
-
-  @keyframes animateRight {
-    0% {
-      -webkit-transform: translateY(100%);
-              transform: translateY(100%);
-    }
-    100% {
-      -webkit-transform: translateY(-100%);
-              transform: translateY(-100%);
-    }
-  }
-
-  span:nth-child(3) {
-    bottom: 0px;
-    left: 0px;
-    width: 100%;
-    height: 2px;
-    background: -webkit-gradient(linear, left top, right top, from(rgba(8, 43, 43, 0)), to(#26d9d9));
-    background: linear-gradient(to right, rgba(8, 43, 43, 0), #26d9d9);
-    -webkit-animation: 2s animateBottom linear infinite;
-            animation: 2s animateBottom linear infinite;
-  }
-
-  @keyframes animateBottom {
-    0% {
-      -webkit-transform: translateX(-100%);
-              transform: translateX(-100%);
-    }
-    100% {
-      -webkit-transform: translateX(100%);
-              transform: translateX(100%);
-    }
-  }
-
-  span:nth-child(4) {
-    top: 0px;
-    left: 0px;
-    height: 100%;
-    width: 2px;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(8, 43, 43, 0)), to(#26d9d9));
-    background: linear-gradient(to bottom, rgba(8, 43, 43, 0), #26d9d9);
-    -webkit-animation: 2s animateLeft linear -1s infinite;
-            animation: 2s animateLeft linear -1s infinite;
-  }
-
-  @keyframes animateLeft {
-    0% {
-      -webkit-transform: translateY(-100%);
-              transform: translateY(-100%);
-    }
-    100% {
-      -webkit-transform: translateY(100%);
-              transform: translateY(100%);
-    }
+  :active {
+    transform: scale(0.95);
   }
 `;
 

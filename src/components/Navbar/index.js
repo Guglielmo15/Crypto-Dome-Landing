@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { FaBars } from 'react-icons/fa';
+import { FaCrown } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
 import { animateScroll as scroll } from 'react-scroll';
 import {
@@ -82,25 +83,13 @@ const Navbar = ({ toggle }) => {
                   Services
                 </NavLinks>
               </NavItem>
-              {/* <NavItem>
-                <NavLinks
-                  to='signup'
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  exact='true'
-                  offset={-80}
-                >
-                  Sign Up
-                </NavLinks>
-              </NavItem> */}
             </NavMenu>
             <NavBtn>
-              <NavBtnLink to='/signin'><span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              Hub <CloudCircle />
+              <NavBtnLink to="/#">
+                Hub <CloudCircle />
+              </NavBtnLink>
+              <NavBtnLink to="/#">
+                Premium <FaCrown />
               </NavBtnLink>
             </NavBtn>
           </NavbarContainer>
